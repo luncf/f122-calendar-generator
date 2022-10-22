@@ -3,6 +3,7 @@ from collections import namedtuple
 from enum import Enum
 import json
 import random
+import os
 
 class SeasonLength(Enum):
     Short = 10
@@ -36,7 +37,7 @@ def load_grand_prix_races(season_number):
     grand_prix_races = []
 
     with open('grand_prix_races.json') as f:
-        data = json.load(f, encoding='utf-8')
+        data = json.load(f)
         grand_prix_races = data['default_gps']
 
         if season_number > 1:
@@ -61,20 +62,16 @@ def print_calendar(grand_prix_races, calendar):
 
     INVSIBLE_CHAR = chr(24)
 
+    os.system("") # Required for Windows to render text colour correctly
+
     longest_gp_name = len(max(grand_prix_races, key=len))
 
-    print("")
-    print("")
-    print("")
     for i, grand_prix in enumerate(grand_prix_races):
         try:
             race_number = calendar.index(i)
             print(ANSI_BOLD + ANSI_GREEN_BG + '{:02d}. {:{width}}'.format(race_number + 1, grand_prix, width=longest_gp_name) + INVSIBLE_CHAR + ANSI_END)
         except ValueError:
             print(ANSI_RED_BG + '    {:{width}}'.format(grand_prix, width=longest_gp_name) + INVSIBLE_CHAR + ANSI_END)
-    print("")
-    print("")
-    print("")
 
 def main():
     season_settings = parse_input()
