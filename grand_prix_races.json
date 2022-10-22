@@ -1,0 +1,31 @@
+{
+    "default_gps": [
+        "Bahrain GP, Bahrain International Circuit",
+        "Saudi Arabian GP, Jeddah Corniche Circuit",
+        "Australian GP, Albert Park",
+        "Emilia Romagna GP, Autodromo Internazionale Enzo e Dino Ferrari",
+        "Miami GP, Miami International Autodrome",
+        "Spanish GP, Circuit de Barcelona-Catalunya",
+        "Monaco GP, Circuit de Monaco",
+        "Azerbaijan GP, Baku City Circuit",
+        "Canadian GP, Circuit Gilles Villeneuve",
+        "British GP, Silverstone Circuit",
+        "Austrian GP, Red Bull Ring",
+        "French GP, Circuit Paul Ricard",
+        "Hungarian GP, Hungaroring",
+        "Belgian GP, Circuit de Spa-Francorchamps",
+        "Dutch GP, Circuit Zandvoort",
+        "Italian GP, Monza Circuit",
+        "Singapore GP, Marina Bay Street Circuit",
+        "Japanese GP, Suzuka International Racing Course",
+        "United States GP, Circuit of the Americas",
+        "Mexico City GP, Autodromo Hermanos Rodriguez",
+        "Sao Paulo GP, Interlagos Circuit",
+        "Abu Dhabi GP, Yas Marina Circuit"
+    ],
+
+    "extra_gps": [
+        "Chinese GP, Shanghai International Circuit",
+        "Portuguese GP, Autodromo Internacional do Algarve"
+    ]
+}
